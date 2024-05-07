@@ -28,10 +28,9 @@ public class ScontrinoInElaborazione extends AbsScontrino {
         scontrinoModificabile.add(prodotto);
     }
 
-    // Post-condizioni: inizializza lo scontrino con *scontrino*
+    // Post-condizioni: inizializza scontrinoModificabile con *scontrinoModificabile*
     //                  solleva un'eccezione di tipo NullPointerException se scontrinoModificabile è nullo
     //                  solleva un'eccezione di tipo NullPointerException se scontrinoModificabile contiene elementi nulli
-    //                  solleva un'eccezione di tipo IllegalArgumentException se scontrinoModificabile è vuoto
     public ScontrinoInElaborazione(List<Prodotto> scontrinoModificabile) {
         Objects.requireNonNull(scontrinoModificabile);
         for (Prodotto p : scontrinoModificabile) {
